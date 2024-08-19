@@ -1,0 +1,151 @@
+:root {--branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-fundo: #00030c; 
+    --fonte: "Inter", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte);
+    font-weight: 400;
+    font-size: 1em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.primeira{
+    background-image: url("/assets/Background.png") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__div__prim{
+    margin: 0 6em;
+}
+.container__titulo{
+    font-size: 1.75em;
+    font-weight: 700;
+}
+
+.container__imagem1{
+    margin: 2em 0 2em 0;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 0.32em;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_sec {
+    background-color: transparent;
+    border: 0.125em solid var(--branco-principal);
+}
+
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 0.75em;
+}
+
+.segunda{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.container__imagemsec{
+    width: 80%;
+}
+
+.div2__titulo{
+    font-weight: 700;
+    font-size: 2.375em;
+    color: var(--branco-principal);
+    margin-bottom: 0.5em;
+}
+
+.container__div__sec{
+    padding: 2em;
+}
+
+.div2__descricao{
+    color: var(--cinza-secundario);
+}
+
+.segunda__botao_sec{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo{
+    font-size: 3em;
+    color: var(--branco-principal);
+}
+
+.lista__item{
+    font-size: 2em;
+    color: var(--branco-principal);
+}
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo{
+    margin-bottom: 2.5em;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 1.5em;
+}
+
+.lista__link{
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 1em;
+}
+
+.rodape__texto{
+    color: var(--cinza-secundario);
+    font-size: 0.875em;
+    margin: 1em 0;
+}
+
+.lista__link:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link:active {
+    color: purple;
+}
